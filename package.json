@@ -1,0 +1,16 @@
+{
+  "name": "sol-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "solhint": "solhint 'src/**/*.sol'",
+    "solhint-strict": "solhint --max-warnings 0 'src/**/*.sol'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "solhint": "^5.0.5"
+  }
+}
