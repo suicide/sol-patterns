@@ -19,7 +19,7 @@ abstract contract TokenTest is Test {
     }
 
     function testBurn(address from, uint256 amount) public {
-        uint256 supply = 100_000 ether;
+        uint256 supply = 100_000_000_000 ether;
         vm.assume(from != address(0));
         vm.assume(amount <= supply);
 
@@ -34,7 +34,7 @@ abstract contract TokenTest is Test {
     }
 
     function testTransfer(address from, address to, uint256 amount) public {
-        uint256 supply = 100_000 ether;
+        uint256 supply = 100_000_000_000 ether;
         vm.assume(from != address(0));
         vm.assume(to != address(0));
         vm.assume(to != from);
