@@ -7,9 +7,7 @@ import {Token} from "../src/Token.sol";
 import {Vanilla} from "../src/vanilla/Vanilla.sol";
 
 contract VanillaTest is TokenTest {
-
     function setUp() public {
         token = new Vanilla();
     }
-
 }

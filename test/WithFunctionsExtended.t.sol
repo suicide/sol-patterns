@@ -10,4 +10,12 @@ contract WithLibTest is TokenTest {
     function setUp() public {
         token = new WithFunctionsExtended();
     }
+
+    function testJustDoIt(address to) public {
+        vm.assume(to != address(0));
+
+        uint256 amount = 10_000;
+
+        (WithFunctionsExtended(address(token))).justDoIt(to, amount);
+    }
 }
