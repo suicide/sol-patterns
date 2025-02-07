@@ -106,7 +106,7 @@ library TokenLib {
         view
         returns (uint256)
     {
-        require(owner != address(0));
+        require(owner != address(0), TokenError());
         return balanceOf_(owner);
     }
 }
