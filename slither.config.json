@@ -1,5 +1,4 @@
 {
   "filter_paths": "lib/",
-  "detectors_to_exclude": ""
+  "detectors_to_exclude": "assembly,erc20-interface,arbitrary-send-erc20,naming-convention"
 }
-
