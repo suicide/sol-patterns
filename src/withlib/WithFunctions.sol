@@ -100,6 +100,15 @@ library TokenLib {
     function _balanceOf(Storage storage $, address owner) internal view returns (uint256) {
         return $.balances[owner];
     }
+
+    function _doSomething(function (address) external view returns (uint256) balanceOf_, address owner)
+        internal
+        view
+        returns (uint256)
+    {
+        require(owner != address(0));
+        return balanceOf_(owner);
+    }
 }
 
 contract WithFunctions is Token {
